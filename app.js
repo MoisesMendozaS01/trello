@@ -1,5 +1,5 @@
 const Trello = require("./main");
-var trello = new Trello("key", "token");
+var trello = new Trello(process.env.KEY, process.env.TOKEN);
 var cardTitle = `Card Nueva ${new Date()}`;
 
 console.log("Ejecutando!");
